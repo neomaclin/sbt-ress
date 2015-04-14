@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.neolin.sbt"
+		module="sbt-ress"
+		revision="1.0.0"
+		extra-scalaVersion="2.10"
+		extra-sbtVersion="0.13"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, scripted-sbt, scripted-sbt-launch"
+		date="20150410161326"/>
+	<dependencies>
+		<module organisation="com.typesafe.sbt" name="sbt-js-engine">
+			<revision name="1.0.1" status="release" pubdate="20140625112539" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="no" details="" size="1954" time="0" location="/Users/neo.lin/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-js-engine/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-js-engine/scala_2.10/sbt_0.13/1.0.1/ivys/ivy.xml"/>
+				<caller organisation="org.neolin.sbt" name="sbt-ress" conf="test, compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-js-engine" type="jar" ext="jar" status="no" details="" size="141934" time="0" location="/Users/neo.lin/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-js-engine/jars/sbt-js-engine-1.0.1.jar">
+						<origin-location is-local="false" location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-js-engine/scala_2.10/sbt_0.13/1.0.1/jars/sbt-js-engine.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbt" name="sbt-web">
+			<revision name="1.0.2" status="release" pubdate="20140625111143" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="38">
+				<metadata-artifact status="no" details="" size="1800" time="0" location="/Users/neo.lin/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-web/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.10/sbt_0.13/1.0.2/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-js-engine" conf="compile" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0.1" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-web" type="jar" ext="jar" status="successful" details="" size="247924" time="1067" location="/Users/neo.lin/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-web/jars/sbt-web-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.10/sbt_0.13/1.0.2/jars/sbt-web.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="npm_2.10">
+			<revision name="1.0.0" status="release" pubdate="20140528003656" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="32">
+				<metadata-artifact status="no" details="" size="3129" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe/npm_2.10/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/npm_2.10/1.0.0/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-js-engine" conf="compile" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.1"/>
+				<artifacts>
+					<artifact name="npm_2.10" type="jar" ext="jar" status="no" details="" size="4728" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe/npm_2.10/jars/npm_2.10-1.0.0.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/npm_2.10/1.0.0/jars/npm_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.webjars" name="webjars-locator">
+			<revision name="0.14" status="release" pubdate="20140429224234" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="master(*), default, compile, runtime(*), runtime, default(compile), compile(*), master" position="34">
+				<license name="MIT" url="https://github.com/webjars/webjars-locator/blob/master/LICENSE.md"/>
+				<metadata-artifact status="no" details="" size="3657" time="0" location="/Users/neo.lin/.ivy2/cache/org.webjars/webjars-locator/ivy-0.14.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.webjars/webjars-locator/0.14/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe" name="npm_2.10" conf="default, compile, runtime, master" rev="0.14" rev-constraint-default="0.14" rev-constraint-dynamic="0.14" callerrev="1.0.0"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-web" conf="compile" rev="0.14" rev-constraint-default="0.14" rev-constraint-dynamic="0.14" callerrev="1.0.2"/>
+				<artifacts>
+					<artifact name="webjars-locator" type="jar" ext="jar" status="no" details="" size="24837" time="0" location="/Users/neo.lin/.ivy2/cache/org.webjars/webjars-locator/jars/webjars-locator-0.14.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.webjars/webjars-locator/0.14/jars/webjars-locator.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.3.3" status="release" pubdate="20140410125535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="35">
+				<metadata-artifact status="no" details="" size="3123" time="0" location="/Users/neo.lin/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.3.3.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.fasterxml.jackson.core/jackson-databind/2.3.3/ivys/ivy.xml"/>
+				<caller organisation="org.webjars" name="webjars-locator" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.14"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="915481" time="0" location="/Users/neo.lin/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.3.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.fasterxml.jackson.core/jackson-databind/2.3.3/bundles/jackson-databind.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.3.3" status="release" pubdate="20140410124708" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="37">
+				<metadata-artifact status="no" details="" size="2458" time="0" location="/Users/neo.lin/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.3.3.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.fasterxml.jackson.core/jackson-core/2.3.3/ivys/ivy.xml"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="199621" time="0" location="/Users/neo.lin/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.3.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.fasterxml.jackson.core/jackson-core/2.3.3/bundles/jackson-core.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.3.0" status="release" pubdate="20131113235645" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="36">
+				<metadata-artifact status="no" details="" size="2349" time="0" location="/Users/neo.lin/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.fasterxml.jackson.core/jackson-annotations/2.3.0/ivys/ivy.xml"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.3"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="35058" time="0" location="/Users/neo.lin/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.0.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.fasterxml.jackson.core/jackson-annotations/2.3.0/bundles/jackson-annotations.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.webjars" name="npm">
+			<revision name="1.3.26" status="release" pubdate="20140204034629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="33">
+				<license name="Assorted" url="https://github.com/npm/npm/blob/master/LICENCE"/>
+				<metadata-artifact status="no" details="" size="3299" time="0" location="/Users/neo.lin/.ivy2/cache/org.webjars/npm/ivy-1.3.26.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.webjars/npm/1.3.26/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe" name="npm_2.10" conf="default, compile, runtime, master" rev="1.3.26" rev-constraint-default="1.3.26" rev-constraint-dynamic="1.3.26" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="npm" type="jar" ext="jar" status="no" details="" size="1825874" time="0" location="/Users/neo.lin/.ivy2/cache/org.webjars/npm/jars/npm-1.3.26.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.webjars/npm/1.3.26/jars/npm.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="jse_2.10">
+			<revision name="1.0.0" status="release" pubdate="20140528003247" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, default(compile), compile(*), master" position="1">
+				<metadata-artifact status="no" details="" size="3560" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe/jse_2.10/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/jse_2.10/1.0.0/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-js-engine" conf="compile" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.1"/>
+				<caller organisation="com.typesafe" name="npm_2.10" conf="default, compile, runtime, master" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jse_2.10" type="jar" ext="jar" status="no" details="" size="148097" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe/jse_2.10/jars/jse_2.10-1.0.0.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/jse_2.10/1.0.0/jars/jse_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-simple">
+			<revision name="1.7.7" status="release" pubdate="20140404071257" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="30">
+				<metadata-artifact status="no" details="" size="2813" time="0" location="/Users/neo.lin/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.slf4j/slf4j-simple/1.7.7/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe" name="jse_2.10" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="slf4j-simple" type="jar" ext="jar" status="no" details="" size="10683" time="0" location="/Users/neo.lin/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.7.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.slf4j/slf4j-simple/1.7.7/jars/slf4j-simple.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.7" status="release" pubdate="20140404071248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="31">
+				<metadata-artifact status="no" details="" size="2669" time="0" location="/Users/neo.lin/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.slf4j/slf4j-api/1.7.7/ivys/ivy.xml"/>
+				<caller organisation="org.webjars" name="webjars-locator" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.14"/>
+				<caller organisation="org.slf4j" name="slf4j-simple" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.7.7"/>
+				<caller organisation="io.apigee.trireme" name="trireme-core" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="0.7.5"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="29257" time="0" location="/Users/neo.lin/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.slf4j/slf4j-api/1.7.7/jars/slf4j-api.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.2" status="release" pubdate="20121011145524" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4459" time="0" location="/Users/neo.lin/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.2.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.slf4j/slf4j-api/1.7.2/ivys/ivy.xml"/>
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="io.apigee.trireme" name="trireme-core" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="0.7.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="org.webjars" name="webjars-locator" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.14"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-json_2.10">
+			<revision name="1.2.6" status="release" pubdate="20140410044706" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="27">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2940" time="0" location="/Users/neo.lin/.ivy2/cache/io.spray/spray-json_2.10/ivy-1.2.6.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/io.spray/spray-json_2.10/1.2.6/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe" name="jse_2.10" conf="default, compile, runtime, master" rev="1.2.6" rev-constraint-default="1.2.6" rev-constraint-dynamic="1.2.6" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="spray-json_2.10" type="bundle" ext="jar" status="no" details="" size="320621" time="0" location="/Users/neo.lin/.ivy2/cache/io.spray/spray-json_2.10/bundles/spray-json_2.10-1.2.6.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/io.spray/spray-json_2.10/1.2.6/bundles/spray-json_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-scala_2.10">
+			<revision name="1.1.6" status="release" pubdate="20130826065413" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="28">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2935" time="0" location="/Users/neo.lin/.ivy2/cache/org.parboiled/parboiled-scala_2.10/ivy-1.1.6.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.parboiled/parboiled-scala_2.10/1.1.6/ivys/ivy.xml"/>
+				<caller organisation="io.spray" name="spray-json_2.10" conf="compile, runtime" rev="1.1.6" rev-constraint-default="1.1.6" rev-constraint-dynamic="1.1.6" callerrev="1.2.6"/>
+				<artifacts>
+					<artifact name="parboiled-scala_2.10" type="bundle" ext="jar" status="no" details="" size="237780" time="0" location="/Users/neo.lin/.ivy2/cache/org.parboiled/parboiled-scala_2.10/bundles/parboiled-scala_2.10-1.1.6.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.parboiled/parboiled-scala_2.10/1.1.6/bundles/parboiled-scala_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-core">
+			<revision name="1.1.6" status="release" pubdate="20130822113221" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="29">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2643" time="0" location="/Users/neo.lin/.ivy2/cache/org.parboiled/parboiled-core/ivy-1.1.6.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.parboiled/parboiled-core/1.1.6/ivys/ivy.xml"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.10" conf="compile, runtime" rev="1.1.6" rev-constraint-default="1.1.6" rev-constraint-dynamic="1.1.6" callerrev="1.1.6"/>
+				<artifacts>
+					<artifact name="parboiled-core" type="bundle" ext="jar" status="no" details="" size="187091" time="0" location="/Users/neo.lin/.ivy2/cache/org.parboiled/parboiled-core/bundles/parboiled-core-1.1.6.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.parboiled/parboiled-core/1.1.6/bundles/parboiled-core.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.apigee.trireme" name="trireme-node10src">
+			<revision name="0.7.5" status="release" pubdate="20140516192310" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="26">
+				<metadata-artifact status="no" details="" size="3870" time="0" location="/Users/neo.lin/.ivy2/cache/io.apigee.trireme/trireme-node10src/ivy-0.7.5.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/io.apigee.trireme/trireme-node10src/0.7.5/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe" name="jse_2.10" conf="default, compile, runtime, master" rev="0.7.5" rev-constraint-default="0.7.5" rev-constraint-dynamic="0.7.5" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="trireme-node10src" type="jar" ext="jar" status="no" details="" size="424719" time="0" location="/Users/neo.lin/.ivy2/cache/io.apigee.trireme/trireme-node10src/jars/trireme-node10src-0.7.5.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/io.apigee.trireme/trireme-node10src/0.7.5/jars/trireme-node10src.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.apigee.trireme" name="trireme-core">
+			<revision name="0.7.5" status="release" pubdate="20140516190006" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="24">
+				<metadata-artifact status="no" details="" size="3701" time="0" location="/Users/neo.lin/.ivy2/cache/io.apigee.trireme/trireme-core/ivy-0.7.5.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/io.apigee.trireme/trireme-core/0.7.5/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe" name="jse_2.10" conf="default, compile, runtime, master" rev="0.7.5" rev-constraint-default="0.7.5" rev-constraint-dynamic="0.7.5" callerrev="1.0.0"/>
+				<caller organisation="io.apigee.trireme" name="trireme-node10src" conf="compile, runtime" rev="0.7.5" rev-constraint-default="0.7.5" rev-constraint-dynamic="0.7.5" callerrev="0.7.5"/>
+				<artifacts>
+					<artifact name="trireme-core" type="jar" ext="jar" status="no" details="" size="398553" time="0" location="/Users/neo.lin/.ivy2/cache/io.apigee.trireme/trireme-core/jars/trireme-core-0.7.5.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/io.apigee.trireme/trireme-core/0.7.5/jars/trireme-core.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mozilla" name="rhino">
+			<revision name="1.7R4" status="release" pubdate="20120620060507" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://developer.mozilla.org/en/Rhino" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="25">
+				<license name="Mozilla Public License, Version 2.0" url="http://www.mozilla.org/MPL/2.0/index.txt"/>
+				<metadata-artifact status="no" details="" size="2886" time="0" location="/Users/neo.lin/.ivy2/cache/org.mozilla/rhino/ivy-1.7R4.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.mozilla/rhino/1.7R4/ivys/ivy.xml"/>
+				<caller organisation="io.apigee.trireme" name="trireme-node10src" conf="compile, runtime" rev="1.7R4" rev-constraint-default="1.7R4" rev-constraint-dynamic="1.7R4" callerrev="0.7.5"/>
+				<caller organisation="io.apigee.trireme" name="trireme-core" conf="compile, runtime" rev="1.7R4" rev-constraint-default="1.7R4" rev-constraint-dynamic="1.7R4" callerrev="0.7.5"/>
+				<artifacts>
+					<artifact name="rhino" type="jar" ext="jar" status="no" details="" size="1134765" time="0" location="/Users/neo.lin/.ivy2/cache/org.mozilla/rhino/jars/rhino-1.7R4.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.mozilla/rhino/1.7R4/jars/rhino.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-contrib_2.10">
+			<revision name="2.3.2" status="release" pubdate="20140409082704" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="5">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3841" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-contrib_2.10/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-contrib_2.10/2.3.2/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe" name="jse_2.10" conf="default, compile, runtime, master" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="akka-contrib_2.10" type="jar" ext="jar" status="no" details="" size="788573" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-contrib_2.10/jars/akka-contrib_2.10-2.3.2.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-contrib_2.10/2.3.2/jars/akka-contrib_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-persistence-experimental_2.10">
+			<revision name="2.3.2" status="release" pubdate="20140409082523" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4153" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.10/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-persistence-experimental_2.10/2.3.2/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-contrib_2.10" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="akka-persistence-experimental_2.10" type="jar" ext="jar" status="no" details="" size="699620" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.10/jars/akka-persistence-experimental_2.10-2.3.2.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-persistence-experimental_2.10/2.3.2/jars/akka-persistence-experimental_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.leveldbjni" name="leveldbjni-all">
+			<revision name="1.7" status="release" pubdate="20130513091202" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="16">
+				<metadata-artifact status="no" details="" size="3343" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/ivy-1.7.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-all/1.7/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-persistence-experimental_2.10" conf="compile, runtime" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="leveldbjni-all" type="bundle" ext="jar" status="no" details="" size="1035468" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-all/1.7/bundles/leveldbjni-all.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.leveldbjni" name="leveldbjni-win64">
+			<revision name="1.5" status="release" pubdate="20130123173052" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="23">
+				<metadata-artifact status="no" details="" size="2547" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-win64/1.5/ivys/ivy.xml"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-all" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.7"/>
+				<artifacts>
+					<artifact name="leveldbjni-win64" type="jar" ext="jar" status="no" details="" size="126331" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-win64/1.5/jars/leveldbjni-win64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.leveldbjni" name="leveldbjni-win32">
+			<revision name="1.5" status="release" pubdate="20130123173254" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="22">
+				<metadata-artifact status="no" details="" size="2547" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-win32/1.5/ivys/ivy.xml"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-all" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.7"/>
+				<artifacts>
+					<artifact name="leveldbjni-win32" type="jar" ext="jar" status="no" details="" size="111686" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-win32/1.5/jars/leveldbjni-win32.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.leveldbjni" name="leveldbjni-linux64">
+			<revision name="1.5" status="release" pubdate="20130123171810" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="21">
+				<metadata-artifact status="no" details="" size="2545" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-linux64/1.5/ivys/ivy.xml"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-all" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.7"/>
+				<artifacts>
+					<artifact name="leveldbjni-linux64" type="jar" ext="jar" status="no" details="" size="280537" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-linux64/1.5/jars/leveldbjni-linux64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.leveldbjni" name="leveldbjni-linux32">
+			<revision name="1.5" status="release" pubdate="20130123171810" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="20">
+				<metadata-artifact status="no" details="" size="2545" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-linux32/1.5/ivys/ivy.xml"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-all" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.7"/>
+				<artifacts>
+					<artifact name="leveldbjni-linux32" type="jar" ext="jar" status="no" details="" size="281930" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-linux32/1.5/jars/leveldbjni-linux32.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.leveldbjni" name="leveldbjni-osx">
+			<revision name="1.5" status="release" pubdate="20130123170531" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="19">
+				<metadata-artifact status="no" details="" size="2796" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-osx/1.5/ivys/ivy.xml"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-all" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.7"/>
+				<artifacts>
+					<artifact name="leveldbjni-osx" type="jar" ext="jar" status="no" details="" size="167140" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni-osx/1.5/jars/leveldbjni-osx.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.leveldbjni" name="leveldbjni">
+			<revision name="1.7" status="release" pubdate="20130513091129" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="17">
+				<metadata-artifact status="no" details="" size="2678" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/ivy-1.7.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni/1.7/ivys/ivy.xml"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-linux64" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-all" conf="compile, runtime" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="1.7"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-osx" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-win64" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-win32" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-linux32" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<artifacts>
+					<artifact name="leveldbjni" type="jar" ext="jar" status="no" details="" size="56368" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.leveldbjni/leveldbjni/1.7/jars/leveldbjni.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-linux64" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-osx" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-win64" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-win32" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni-linux32" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.hawtjni" name="hawtjni-runtime">
+			<revision name="1.8" status="release" pubdate="20130513085423" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="18">
+				<metadata-artifact status="no" details="" size="2276" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/ivy-1.8.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.hawtjni/hawtjni-runtime/1.8/ivys/ivy.xml"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.7"/>
+				<artifacts>
+					<artifact name="hawtjni-runtime" type="jar" ext="jar" status="no" details="" size="19705" time="0" location="/Users/neo.lin/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.fusesource.hawtjni/hawtjni-runtime/1.8/jars/hawtjni-runtime.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.iq80.leveldb" name="leveldb">
+			<revision name="0.5" status="release" pubdate="20130122134104" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="12">
+				<metadata-artifact status="no" details="" size="3100" time="0" location="/Users/neo.lin/.ivy2/cache/org.iq80.leveldb/leveldb/ivy-0.5.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.iq80.leveldb/leveldb/0.5/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-persistence-experimental_2.10" conf="compile, runtime" rev="0.5" rev-constraint-default="0.5" rev-constraint-dynamic="0.5" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="leveldb" type="jar" ext="jar" status="no" details="" size="227716" time="0" location="/Users/neo.lin/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.iq80.leveldb/leveldb/0.5/jars/leveldb.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="12.0" status="release" pubdate="20140131071609" resolver="activator-local" artresolver="activator-local" homepage="" downloaded="false" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="14">
+				<metadata-artifact status="no" details="" size="3535" time="0" location="/Users/neo.lin/.ivy2/cache/com.google.guava/guava/ivy-12.0.xml" searched="true" original-local-location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.guava/guava/12.0/ivys/ivy.xml" origin-is-local="true" origin-location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.guava/guava/12.0/ivys/ivy.xml"/>
+				<caller organisation="org.iq80.leveldb" name="leveldb" conf="compile, runtime" rev="12.0" rev-constraint-default="12.0" rev-constraint-dynamic="12.0" callerrev="0.5"/>
+				<artifacts>
+					<artifact name="guava" type="jar" ext="jar" status="no" details="" size="1795936" time="0" location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.guava/guava/12.0/jars/guava.jar">
+						<origin-location is-local="true" location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.guava/guava/12.0/jars/guava.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="1.3.9" status="release" pubdate="20140131071609" resolver="activator-local" artresolver="activator-local" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="15">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2393" time="0" location="/Users/neo.lin/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-1.3.9.xml" searched="true" original-local-location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml" origin-is-local="true" origin-location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="12.0"/>
+				<artifacts>
+					<artifact name="jsr305" type="jar" ext="jar" status="no" details="" size="33015" time="0" location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.code.findbugs/jsr305/1.3.9/jars/jsr305.jar">
+						<origin-location is-local="true" location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.code.findbugs/jsr305/1.3.9/jars/jsr305.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.iq80.leveldb" name="leveldb-api">
+			<revision name="0.5" status="release" pubdate="20130122133949" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="13">
+				<metadata-artifact status="no" details="" size="2236" time="0" location="/Users/neo.lin/.ivy2/cache/org.iq80.leveldb/leveldb-api/ivy-0.5.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.iq80.leveldb/leveldb-api/0.5/ivys/ivy.xml"/>
+				<caller organisation="org.iq80.leveldb" name="leveldb" conf="compile, runtime" rev="0.5" rev-constraint-default="0.5" rev-constraint-dynamic="0.5" callerrev="0.5"/>
+				<caller organisation="org.fusesource.leveldbjni" name="leveldbjni" conf="compile, runtime" rev="0.5" rev-constraint-default="0.5" rev-constraint-dynamic="0.5" callerrev="1.7"/>
+				<artifacts>
+					<artifact name="leveldb-api" type="jar" ext="jar" status="no" details="" size="9233" time="0" location="/Users/neo.lin/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.iq80.leveldb/leveldb-api/0.5/jars/leveldb-api.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-cluster_2.10">
+			<revision name="2.3.2" status="release" pubdate="20140409082628" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="10">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3131" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-cluster_2.10/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-cluster_2.10/2.3.2/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-contrib_2.10" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="akka-cluster_2.10" type="jar" ext="jar" status="no" details="" size="1063001" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-cluster_2.10/jars/akka-cluster_2.10-2.3.2.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-cluster_2.10/2.3.2/jars/akka-cluster_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-remote_2.10">
+			<revision name="2.3.2" status="release" pubdate="20140409082423" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="6">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3755" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-remote_2.10/2.3.2/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-contrib_2.10" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-cluster_2.10" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="akka-remote_2.10" type="jar" ext="jar" status="no" details="" size="1335496" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/jars/akka-remote_2.10-2.3.2.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-remote_2.10/2.3.2/jars/akka-remote_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.uncommons.maths" name="uncommons-maths">
+			<revision name="1.2.2a" status="release" pubdate="20110408095605" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maths.uncommons.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="9">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2727" time="0" location="/Users/neo.lin/.ivy2/cache/org.uncommons.maths/uncommons-maths/ivy-1.2.2a.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.uncommons.maths/uncommons-maths/1.2.2a/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="1.2.2a" rev-constraint-default="1.2.2a" rev-constraint-dynamic="1.2.2a" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="uncommons-maths" type="jar" ext="jar" status="no" details="" size="49019" time="0" location="/Users/neo.lin/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.uncommons.maths/uncommons-maths/1.2.2a/jars/uncommons-maths.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.8.0.Final" status="release" pubdate="20131107042312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="7">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="5415" time="0" location="/Users/neo.lin/.ivy2/cache/io.netty/netty/ivy-3.8.0.Final.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/io.netty/netty/3.8.0.Final/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="3.8.0.Final" rev-constraint-default="3.8.0.Final" rev-constraint-dynamic="3.8.0.Final" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="netty" type="bundle" ext="jar" status="no" details="" size="1230201" time="0" location="/Users/neo.lin/.ivy2/cache/io.netty/netty/bundles/netty-3.8.0.Final.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/io.netty/netty/3.8.0.Final/bundles/netty.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.protobuf" name="protobuf-java">
+			<revision name="2.5.0" status="release" pubdate="20130307191811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="8">
+				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2803" time="0" location="/Users/neo.lin/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.protobuf/protobuf-java/2.5.0/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="2.3.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-persistence-experimental_2.10" conf="compile, runtime" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="protobuf-java" type="bundle" ext="jar" status="no" details="" size="533455" time="0" location="/Users/neo.lin/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.protobuf/protobuf-java/2.5.0/bundles/protobuf-java.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.10">
+			<revision name="2.3.2" status="release" pubdate="20140409082233" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="master(*), default, compile, runtime(*), runtime, default(compile), compile(*), master" position="3">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2643" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-actor_2.10/2.3.2/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe" name="jse_2.10" conf="default, compile, runtime, master" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.2"/>
+				<caller organisation="com.typesafe" name="npm_2.10" conf="default, compile, runtime, master" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0.0"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-web" conf="compile" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-persistence-experimental_2.10" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="akka-actor_2.10" type="jar" ext="jar" status="no" details="" size="2549066" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.2.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe.akka/akka-actor_2.10/2.3.2/jars/akka-actor_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.0" status="release" pubdate="20140115100944" resolver="activator-local" artresolver="activator-local" homepage="https://github.com/typesafehub/config" downloaded="false" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2734" time="0" location="/Users/neo.lin/.ivy2/cache/com.typesafe/config/ivy-1.2.0.xml" searched="true" original-local-location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/config/1.2.0/ivys/ivy.xml" origin-is-local="true" origin-location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/config/1.2.0/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.10" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="217897" time="0" location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/config/1.2.0/bundles/config.jar">
+						<origin-location is-local="true" location="/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/config/1.2.0/bundles/config.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.4" status="release" pubdate="20140318174629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2572" time="0" location="/Users/neo.lin/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.scala-lang/scala-library/2.10.4/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-contrib_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.3" callerrev="2.3.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-cluster_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.3" callerrev="2.3.2"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.2" callerrev="1.1.6"/>
+				<caller organisation="com.typesafe" name="jse_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0.0"/>
+				<caller organisation="io.spray" name="spray-json_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.2.6"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.3" callerrev="2.3.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.3" callerrev="2.3.2"/>
+				<caller organisation="com.typesafe" name="npm_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-persistence-experimental_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.3" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/Users/neo.lin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
+						<origin-location is-local="false" location="file:/usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/org.scala-lang/scala-library/2.10.4/jars/scala-library.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

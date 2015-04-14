@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.neolin.sbt"
+		module="sbt-ress$sources_javadoc"
+		revision="1.0.0"
+		extra-scalaVersion="2.10"
+		extra-sbtVersion="0.13"
+		conf="scripted-sbt-launch"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, scripted-sbt, scripted-sbt-launch"
+		date="20150409152406"/>
+	<dependencies>
+		<module organisation="org.scala-sbt" name="sbt-launch">
+			<revision name="0.13.8" status="release" pubdate="20150320120939" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="no" details="" size="1018" time="0" location="/Users/neo.lin/.ivy2/cache/org.scala-sbt/sbt-launch/ivy-0.13.8.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/ivys/ivy.xml"/>
+				<caller organisation="org.neolin.sbt" name="sbt-ress$sources_javadoc" conf="scripted-sbt-launch" rev="0.13.8" rev-constraint-default="0.13.8" rev-constraint-dynamic="0.13.8" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="sbt-launch" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="sbt-launch" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
