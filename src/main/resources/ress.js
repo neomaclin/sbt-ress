@@ -127,7 +127,7 @@
 
     function mapReduce(tags, stylesheets){
         return _.chain(tags)
-            .map(function(tag){ return '@media' + tag + '{' + stringify(stylesheets[tag], options) + '}'; })
+            .map(function(tag){ return ' @media ' + tag + '{' + stringify(stylesheets[tag], options) + '}'; })
             .reduce(function(left, right){return left + right;})
             .value();
     }
@@ -160,12 +160,18 @@
             write(outputLog, JSON.stringify(devices));
             
             var general = stringify(stylesheets[''],options);
+            var breakpoints = _.reduce(medias, function(result,n){ 
+                                        result[n.device] = n.breakpoint;
+                                        return result;
+                                    }, {}
+                                );
 
              _.chain(devices)
                .mapValues(function(tags){ return general + mapReduce(tags, stylesheets); })
                .forEach(function(value, key){
                             var deviceOutPut = rename(input, key);
-                            write(deviceOutPut, value);
+                            var newValue = (["t","m"].indexOf(key) >= 0) ? value.replace(/\(max-width:[\d]+px\)/gi,"(max-width:"+breakpoints[key]+"px)") : value
+                            write(deviceOutPut, newValue);
                             console.log(deviceOutPut);
                      }).value();
 

@@ -4,12 +4,12 @@
 	<info
 		organisation="org.neolin.sbt"
 		module="sbt-ress$sources_javadoc"
-		revision="1.0.0"
+		revision="1.0.1"
 		extra-scalaVersion="2.10"
 		extra-sbtVersion="0.13"
 		conf="sources"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, scripted-sbt, scripted-sbt-launch"
-		date="20150409152406"/>
+		date="20150603172635"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

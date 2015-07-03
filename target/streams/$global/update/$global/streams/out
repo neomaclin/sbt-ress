@@ -1,11 +1,11 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/neo.lin/IdeaProjects/sbt-ress/}sbt-ress...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: org.neolin.sbt#sbt-ress;1.0.0[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/neo.lin/Repos/sbt-ress/}sbt-ress...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: org.neolin.sbt#sbt-ress;1.0.2[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, scripted-sbt, scripted-sbt-launch][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-js-engine;1.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-js-engine;1.0.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-js-engine;1.0.1[0m
@@ -59,13 +59,21 @@
 [0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe#config;1.2.0[0m
 [0m[[0mdebug[0m] [0m		tried /Users/neo.lin/.ivy2/local/com.typesafe/config/1.2.0/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe#config;1.2.0[0m
-[0m[[0mdebug[0m] [0m		tried /doesnotexist/repository/com.typesafe/config/1.2.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.typesafe#config;1.2.0[0m
-[0m[[0mdebug[0m] [0m		tried /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/config/1.2.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: found md file for com.typesafe#config;1.2.0[0m
-[0m[[0mdebug[0m] [0m		=> /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/config/1.2.0/ivys/ivy.xml (1.2.0)[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.2.0!ivy.xml(ivy.original)[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe#config;1.2.0 in activator-local[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe#config;1.2.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.pom (1.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe#config;1.2.0!config.pom(pom.original) (245ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe/config/1.2.0/bundles/config.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe/config/1.2.0/bundles/config.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe/config/1.2.0/bundles/config.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe/config/1.2.0/bundles/config.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/neo.lin/.ivy2/local/com.typesafe/config/1.2.0/bundles/config.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe#config;1.2.0 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.3.2->com.typesafe#config;1.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#jse_2.10;1.0.0->com.typesafe.akka#akka-actor_2.10;2.3.2 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#jse_2.10;1.0.0->com.typesafe.akka#akka-actor_2.10;2.3.2 [compile->compile][0m
@@ -268,15 +276,53 @@
 [0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.google.guava#guava;12.0[0m
 [0m[[0mdebug[0m] [0m		tried /Users/neo.lin/.ivy2/local/com.google.guava/guava/12.0/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for com.google.guava#guava;12.0[0m
-[0m[[0mdebug[0m] [0m		tried /doesnotexist/repository/com.google.guava/guava/12.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.google.guava#guava;12.0[0m
-[0m[[0mdebug[0m] [0m		tried /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.guava/guava/12.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: found md file for com.google.guava#guava;12.0[0m
-[0m[[0mdebug[0m] [0m		=> /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.guava/guava/12.0/ivys/ivy.xml (12.0)[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;12.0!ivy.xml(ivy.original)[0m
-[0m[[0mdebug[0m] [0m	found com.google.guava#guava;12.0 in activator-local[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.google.guava#guava;12.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.pom (12.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.guava#guava;12.0!guava.pom(pom.original) (246ms)[0m
+[0m[[0minfo[0m] [0mResolving com.google.guava#guava-parent;12.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.guava#guava-parent;12.0 {}[0m
+[0m[[0minfo[0m] [0mResolving com.google.guava#guava-parent;12.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.google.guava#guava-parent;12.0 {}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.google.guava/guava-parent/12.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.google.guava/guava-parent/12.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.google.guava#guava-parent;12.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.guava/guava-parent/12.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.guava/guava-parent/12.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.google.guava#guava-parent;12.0[0m
+[0m[[0mdebug[0m] [0m		tried /Users/neo.lin/.ivy2/local/com.google.guava/guava-parent/12.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.google.guava#guava-parent;12.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/google/guava/guava-parent/12.0/guava-parent-12.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.google.guava#guava-parent;12.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/google/guava/guava-parent/12.0/guava-parent-12.0.pom (12.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/12.0/guava-parent-12.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/12.0/guava-parent-12.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava-parent/12.0/guava-parent-12.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/google/guava/guava-parent/12.0/guava-parent-12.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.guava#guava-parent;12.0!guava-parent.pom(pom.original) (240ms)[0m
+[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.google.guava/guava-parent/12.0/jars/guava-parent.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.google.guava/guava-parent/12.0/jars/guava-parent.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.guava/guava-parent/12.0/jars/guava-parent.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.guava/guava-parent/12.0/jars/guava-parent.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/neo.lin/.ivy2/local/com.google.guava/guava-parent/12.0/jars/guava-parent.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/google/guava/guava-parent/12.0/guava-parent-12.0.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/google/guava/guava-parent/12.0/guava-parent-12.0.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.google.guava/guava/12.0/jars/guava.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.google.guava/guava/12.0/jars/guava.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.guava/guava/12.0/jars/guava.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.guava/guava/12.0/jars/guava.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/neo.lin/.ivy2/local/com.google.guava/guava/12.0/jars/guava.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.google.guava#guava;12.0 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.iq80.leveldb#leveldb;0.5->com.google.guava#guava;12.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -287,24 +333,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving com.google.code.findbugs#jsr305;1.3.9 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving com.google.code.findbugs#jsr305;1.3.9 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.google.code.findbugs#jsr305;1.3.9[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.google.code.findbugs#jsr305;1.3.9[0m
-[0m[[0mdebug[0m] [0m		tried /Users/neo.lin/.ivy2/local/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.google.code.findbugs#jsr305;1.3.9[0m
-[0m[[0mdebug[0m] [0m		tried /doesnotexist/repository/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.google.code.findbugs#jsr305;1.3.9[0m
-[0m[[0mdebug[0m] [0m		tried /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: found md file for com.google.code.findbugs#jsr305;1.3.9[0m
-[0m[[0mdebug[0m] [0m		=> /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.code.findbugs/jsr305/1.3.9/ivys/ivy.xml (1.3.9)[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.code.findbugs#jsr305;1.3.9!ivy.xml(ivy.original)[0m
-[0m[[0mdebug[0m] [0m	found com.google.code.findbugs#jsr305;1.3.9 in activator-local[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.code.findbugs#jsr305;1.3.9[0m
+[0m[[0mdebug[0m] [0m	found com.google.code.findbugs#jsr305;1.3.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-persistence-experimental_2.10;2.3.2->org.fusesource.leveldbjni#leveldbjni-all;1.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -738,9 +769,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->compile][0m
@@ -911,7 +942,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.iq80.leveldb#leveldb;0.5->com.google.guava#guava;12.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -1246,10 +1277,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->compile][0m
@@ -1420,7 +1451,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.iq80.leveldb#leveldb;0.5->com.google.guava#guava;12.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -1755,12 +1786,12 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-sbt#sbt;0.13.8 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-sbt#sbt;0.13.8 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt;0.13.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.8 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.8[0m
@@ -2079,9 +2110,9 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalamacros#quasiquotes_2.10;2.0.1[0m
 [0m[[0mdebug[0m] [0m	found org.scalamacros#quasiquotes_2.10;2.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->compile][0m
@@ -2105,61 +2136,61 @@
 [0m[[0mdebug[0m] [0m	found org.json4s#json4s-core_2.10;3.2.10 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving org.json4s#json4s-ast_2.10;3.2.10 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json4s#json4s-ast_2.10;3.2.10 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json4s#json4s-ast_2.10;3.2.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json4s#json4s-ast_2.10;3.2.10[0m
 [0m[[0mdebug[0m] [0m	found org.json4s#json4s-ast_2.10;3.2.10 in sbt-chain[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving com.thoughtworks.paranamer#paranamer;2.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.thoughtworks.paranamer#paranamer;2.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.thoughtworks.paranamer#paranamer;2.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6[0m
 [0m[[0mdebug[0m] [0m	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [runtime->runtime(*)][0m
@@ -2167,8 +2198,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->master][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#jawn-parser_2.10;0.6.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.spire-math#jawn-parser_2.10;0.6.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.spire-math#jawn-parser_2.10;0.6.0 {compile=[default(compile)]}[0m
@@ -2176,7 +2207,7 @@
 [0m[[0mdebug[0m] [0m	found org.spire-math#jawn-parser_2.10;0.6.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#jawn-parser_2.10;0.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
@@ -2188,13 +2219,13 @@
 [0m[[0mdebug[0m] [0m	found org.spire-math#json4s-support_2.10;0.6.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#json4s-support_2.10;0.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#json4s-support_2.10;0.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
@@ -2444,11 +2475,11 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.3 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->compile][0m
@@ -2619,7 +2650,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.iq80.leveldb#leveldb;0.5->com.google.guava#guava;12.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -2953,13 +2984,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-sbt#sbt;0.13.8 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-sbt#sbt;0.13.8 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
@@ -3149,9 +3180,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [runtime->compile][0m
@@ -3169,62 +3200,62 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->master][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#jawn-parser_2.10;0.6.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#jawn-parser_2.10;0.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
@@ -3232,11 +3263,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#json4s-support_2.10;0.6.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#json4s-support_2.10;0.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#json4s-support_2.10;0.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
@@ -3422,10 +3453,10 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.3 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->compile][0m
@@ -3596,7 +3627,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.iq80.leveldb#leveldb;0.5->com.google.guava#guava;12.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -3930,13 +3961,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.0.1->com.typesafe#jse_2.10;1.0.0 [compile->compile][0m
@@ -4107,7 +4138,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.iq80.leveldb#leveldb;0.5->com.google.guava#guava;12.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.google.guava#guava;12.0->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -4441,13 +4472,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.0.2->org.webjars#webjars-locator;0.14 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-sbt#sbt;0.13.8 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-sbt#sbt;0.13.8 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
@@ -4637,9 +4668,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [runtime->compile][0m
@@ -4657,62 +4688,62 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.json4s#json4s-core_2.10;3.2.10 [compile->master][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#jawn-parser_2.10;0.6.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#jawn-parser_2.10;0.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
@@ -4720,11 +4751,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#json4s-support_2.10;0.6.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#json4s-support_2.10;0.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.1->org.spire-math#json4s-support_2.10;0.6.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
@@ -4910,18 +4941,18 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.3 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [pom][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [pom][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [scala-tool][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->default][0m
@@ -4939,8 +4970,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#jline;2.10.4 [optional->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.4 {optional=[compile(*), master(*)]}[0m
@@ -4953,14 +4984,14 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.4->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [scala-tool->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scripted-sbt'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [scripted-sbt][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-sbt#scripted-sbt;0.13.8 [scripted-sbt->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [scripted-sbt][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-sbt#scripted-sbt;0.13.8 [scripted-sbt->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#scripted-sbt;0.13.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#scripted-sbt;0.13.8 {scripted-sbt=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#scripted-sbt;0.13.8 ...[0m
@@ -4972,7 +5003,7 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-sbt/0.13.8/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-sbt/0.13.8/ivys/ivy.xml.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-sbt/0.13.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-sbt#scripted-sbt;0.13.8!ivy.xml(ivy.original) (157ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-sbt#scripted-sbt;0.13.8!ivy.xml(ivy.original) (617ms)[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#scripted-sbt;0.13.8 in typesafe-ivy-releases[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#scripted-sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#scripted-sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -5020,7 +5051,7 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-framework/0.13.8/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-framework/0.13.8/ivys/ivy.xml.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-framework/0.13.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-sbt#scripted-framework;0.13.8!ivy.xml(ivy.original) (150ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-sbt#scripted-framework;0.13.8!ivy.xml(ivy.original) (595ms)[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#scripted-framework;0.13.8 in typesafe-ivy-releases[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#scripted-framework;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#scripted-framework;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -5029,8 +5060,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#scripted-framework;0.13.8->org.scala-sbt#io;0.13.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#scripted-framework;0.13.8->org.scala-sbt#process;0.13.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scripted-sbt-launch'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.0 [scripted-sbt-launch][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.0->org.scala-sbt#sbt-launch;0.13.8 [scripted-sbt-launch->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for org.neolin.sbt#sbt-ress;1.0.2 [scripted-sbt-launch][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.neolin.sbt#sbt-ress;1.0.2->org.scala-sbt#sbt-launch;0.13.8 [scripted-sbt-launch->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt-launch;0.13.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#sbt-launch;0.13.8 {scripted-sbt-launch=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt-launch;0.13.8 ...[0m
@@ -5042,21 +5073,14 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/ivys/ivy.xml.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-sbt#sbt-launch;0.13.8!ivy.xml(ivy.original) (140ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-sbt#sbt-launch;0.13.8!ivy.xml(ivy.original) (601ms)[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#sbt-launch;0.13.8 in typesafe-ivy-releases[0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-js-engine;1.0.1!sbt-js-engine.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#jse_2.10;1.0.0!jse_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#npm_2.10;1.0.0!npm_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-web/scala_2.10/sbt_0.13/1.0.2/jars/sbt-web.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-web/scala_2.10/sbt_0.13/1.0.2/jars/sbt-web.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.10/sbt_0.13/1.0.2/jars/sbt-web.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.10/sbt_0.13/1.0.2/jars/sbt-web.jar ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.10/sbt_0.13/1.0.2/jars/sbt-web.jar[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.10/sbt_0.13/1.0.2/jars/sbt-web.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.10/sbt_0.13/1.0.2/jars/sbt-web.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-web;1.0.2!sbt-web.jar (1067ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-web;1.0.2!sbt-web.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.10;2.3.2!akka-actor_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-contrib_2.10;2.3.2!akka-contrib_2.10.jar[0m
@@ -5064,8 +5088,12 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.apigee.trireme#trireme-node10src;0.7.5!trireme-node10src.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-json_2.10;1.2.6!spray-json_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.slf4j#slf4j-simple;1.7.7!slf4j-simple.jar[0m
-[0m[[0mdebug[0m] [0m		tried /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.typesafe/config/1.2.0/bundles/config.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.2.0!config.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe#config;1.2.0!config.jar(bundle) (499ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-remote_2.10;2.3.2!akka-remote_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-cluster_2.10;2.3.2!akka-cluster_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-persistence-experimental_2.10;2.3.2!akka-persistence-experimental_2.10.jar[0m
@@ -5075,9 +5103,12 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.iq80.leveldb#leveldb;0.5!leveldb.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.leveldbjni#leveldbjni-all;1.7!leveldbjni-all.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.iq80.leveldb#leveldb-api;0.5!leveldb-api.jar[0m
-[0m[[0mdebug[0m] [0m		tried /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.guava/guava/12.0/jars/guava.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;12.0!guava.jar[0m
-[0m[[0mdebug[0m] [0m		tried /usr/local/Cellar/typesafe-activator/1.3.2/libexec/repository/com.google.code.findbugs/jsr305/1.3.9/jars/jsr305.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/google/guava/guava/12.0/guava-12.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.google.guava#guava;12.0!guava.jar (2048ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.code.findbugs#jsr305;1.3.9!jsr305.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.leveldbjni#leveldbjni;1.7!leveldbjni.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.leveldbjni#leveldbjni-osx;1.5!leveldbjni-osx.jar[0m
@@ -5155,34 +5186,34 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-sbt/0.13.8/jars/scripted-sbt.jar[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-sbt/0.13.8/jars/scripted-sbt.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-sbt/0.13.8/jars/scripted-sbt.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-sbt#scripted-sbt;0.13.8!scripted-sbt.jar (230ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-sbt#scripted-sbt;0.13.8!scripted-sbt.jar (885ms)[0m
 [0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-framework/0.13.8/jars/scripted-framework.jar[0m
 [0m[[0minfo[0m] [0mdownloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-framework/0.13.8/jars/scripted-framework.jar ...[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-framework/0.13.8/jars/scripted-framework.jar[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-framework/0.13.8/jars/scripted-framework.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/scripted-framework/0.13.8/jars/scripted-framework.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-sbt#scripted-framework;0.13.8!scripted-framework.jar (237ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-sbt#scripted-framework;0.13.8!scripted-framework.jar (947ms)[0m
 [0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/jars/sbt-launch.jar[0m
 [0m[[0minfo[0m] [0mdownloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/jars/sbt-launch.jar ...[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/jars/sbt-launch.jar[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/jars/sbt-launch.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/jars/sbt-launch.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-sbt#sbt-launch;0.13.8!sbt-launch.jar (824ms)[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1898ms :: artifacts dl 2416ms[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 compile produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 runtime produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 test produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 provided produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 optional produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 compile-internal produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 runtime-internal produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 test-internal produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 plugin produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 sources produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 docs produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 pom produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 scala-tool produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 scripted-sbt produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-scripted-sbt.xml[0m
-[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.0 scripted-sbt-launch produced in /Users/neo.lin/IdeaProjects/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-scripted-sbt-launch.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1898ms resolve - 2416ms download)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-sbt#sbt-launch;0.13.8!sbt-launch.jar (2801ms)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 8141ms :: artifacts dl 7224ms[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 compile produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 runtime produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 test produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 provided produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 optional produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 compile-internal produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 runtime-internal produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 test-internal produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 plugin produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 sources produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 docs produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 pom produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 scala-tool produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 scripted-sbt produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-scripted-sbt.xml[0m
+[0m[[0mdebug[0m] [0m	report for org.neolin.sbt#sbt-ress;1.0.2 scripted-sbt-launch produced in /Users/neo.lin/Repos/sbt-ress/target/resolution-cache/reports/org.neolin.sbt-sbt-ress-scripted-sbt-launch.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (8141ms resolve - 7224ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

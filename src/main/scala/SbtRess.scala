@@ -16,13 +16,19 @@ object Import {
     def write(dimension: Dimension) = JsObject( Map("min" -> JsNumber(dimension.min), "max" -> JsNumber(dimension.max)) )
   }
 
-  case class Media(device: String, width: Dimension, height: Dimension, mediaType: List[String], orientation: List[String])
+  case class Media(device: String, 
+                   width: Dimension, 
+                   height: Dimension, 
+                   breakpoint: Int,
+                   mediaType: List[String], 
+                   orientation: List[String])
 
   implicit val mediaWrites = new JsonWriter[Media] {
     def write(media: Media) = JsObject(
           Map("device" -> JsString(media.device),
               "width" -> media.width.toJson,
               "height" -> media.height.toJson,
+              "breakpoint" -> JsNumber(media.breakpoint),
               "type" -> JsArray(media.mediaType.map(JsString(_))),
               "orientation" -> JsArray(media.orientation.map(JsString(_)))
         ))

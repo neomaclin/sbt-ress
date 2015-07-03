@@ -4,12 +4,12 @@
 	<info
 		organisation="org.neolin.sbt"
 		module="sbt-ress"
-		revision="1.0.0"
+		revision="1.0.2"
 		extra-scalaVersion="2.10"
 		extra-sbtVersion="0.13"
 		conf="pom"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, scripted-sbt, scripted-sbt-launch"
-		date="20150410161326"/>
+		date="20150703163237"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

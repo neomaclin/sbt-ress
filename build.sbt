@@ -1,12 +1,10 @@
-import bintray.Keys._
-
 sbtPlugin := true
 
 organization := "org.neolin.sbt"
 
 name := "sbt-ress"
 
-version := "1.0.0"
+version := "1.0.2"
 
 scalaVersion := "2.10.4"
 
@@ -18,21 +16,26 @@ scalaVersion := "2.10.4"
 //  "org.webjars" % "underscorejs" % "1.8.3"
 //)
 
-resolvers += Classpaths.sbtPluginSnapshots
+//resolvers += Classpaths.sbtPluginSnapshots
 
-bintrayPublishSettings
+//bintrayPublishSettings
 
-repository in bintray := "sbt-plugins"
+//repository in bintray := "sbt-plugins"
 
-bintrayOrganization in bintray := None
+//bintrayOrganization in bintray := None
 
 //addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.0.0")
+publishMavenStyle := false
+
+credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
+
+publishTo := Some(Resolver.url("Sonatype Snapshots Nexus", new URL("http://torvpc-nexus:8081/nexus/content/repositories/ivy-releases/"))(Resolver.ivyStylePatterns) )
 
 addSbtPlugin("com.typesafe.sbt" %% "sbt-js-engine" % "1.0.1")
 
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
-publishMavenStyle := false
+//publishMavenStyle := false
 
 scriptedSettings
 
