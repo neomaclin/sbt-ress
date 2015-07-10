@@ -9,6 +9,7 @@ cache
 bin
 logs
 project/target/
+project/project/target/
 target
 .idea/*
 .idea_modules/*
