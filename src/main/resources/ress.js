@@ -132,6 +132,15 @@
             .value();
     }
 
+    function mergeing(key, devices){
+        switch(key) {
+            case 'm': return devices['m']; 
+            case 't': return _.union(devices['m'], devices['t']);
+            case 'd': return _.union(devices['t'], devices['d']);
+            default: return devices;
+        }
+    }
+
     sourceFileMappings.forEach(function(sourceFileMapping) {
 
         var input = sourceFileMapping;
@@ -147,19 +156,25 @@
 
             write(output, read(input));
 
-            var devices = _.chain(stylesheets)
+            var devicesTemp = _.chain(stylesheets)
                 .omit('')
                 .keys()
                 .map(function(tag){ return { name: tag, groups: groupsOf(tag) }; })
                 .map(function(ob){ return _.map(ob.groups, function(group){return { device: group, tagName: ob.name};})})
                 .flatten()
                 .groupBy(function(group){ return group.device;})
-                .mapValues(function(value){return _.map(value, function(vo){return vo.tagName;})})
+                .mapValues(function(value){ return _.map(value, function(vo){return vo.tagName;})})
+                .value();
+            
+
+            var devices = _.chain(devicesTemp)
+                .transform(function(result, n, key){ result[key] = mergeing(key, devicesTemp) })
                 .value();
 
             write(outputLog, JSON.stringify(devices));
+        
+            var general = stringify(stylesheets[''], options);
             
-            var general = stringify(stylesheets[''],options);
             var breakpoints = _.reduce(medias, function(result,n){ 
                                         result[n.device] = n.breakpoint;
                                         return result;

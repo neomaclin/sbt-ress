@@ -4,7 +4,7 @@ organization := "org.neolin.sbt"
 
 name := "sbt-ress"
 
-version := "1.0.2"
+version := "1.0.3"
 
 scalaVersion := "2.10.4"
 
